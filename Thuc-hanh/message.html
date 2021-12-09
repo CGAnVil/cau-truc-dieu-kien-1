@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>message</title>
+</head>
+<body>
+<script>
+    let login = prompt('nhap chuc danh')
+    let message = (login == 'Employee') ?
+        'hello' :
+        (login == 'Director') ?
+            'Greatings' :
+            (login == '') ?
+                'no login':
+                '';
+    alert(message)
+</script>
+</body>
+</html>

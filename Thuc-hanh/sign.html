@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    let value = prompt('nhap mot so', 0)-->
+<!--    if (value > 0){-->
+<!--        document.write('1');-->
+<!--    }else if (value <0){-->
+<!--        document.write('-1');-->
+<!--    }else {-->
+<!--        document.write('0')-->
+<!--    }-->
+<!--</script>-->
+<script>
+    let value = parseInt(prompt('nhap mot so', 0))
+    let check = Boolean(value > 0)
+
+    switch (check){
+        case true:
+            alert ('1');
+            break;
+        case false:
+            alert ('-1');
+            break
+        default:
+            alert('0')
+    }
+
+</script>
+</body>
+</html>

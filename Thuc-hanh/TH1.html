@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TH xet nam nhuan</title>
+</head>
+<body>
+<script>
+    let year = parseInt(prompt('Nhap nam can kiem tra'))
+    let namNhuan = false;
+    let chiaHetcho4 = year % 4 == 0;
+    if (chiaHetcho4){
+        let chiaHetcho100 = year % 100 ==0;
+        if(chiaHetcho100){
+            let chiaHetcho400 = year % 100 ==0;
+            if(chiaHetcho400 ){
+                namNhuan = true;
+            }else {
+                namNhuan = false;
+            }
+        }else {
+            namNhuan =true;
+        }
+    }else {
+        namNhuan = false;
+    }
+    if (namNhuan){
+        alert(year + ' la n am nhuan')
+    }else {
+        alert(year + ' khong phai la nam nhuan')
+    }
+</script>
+
+</body>
+</html>
